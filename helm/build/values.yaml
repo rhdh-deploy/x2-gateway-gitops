@@ -1,0 +1,15 @@
+app:
+  name: x2-poi-gateway-app
+  namespace: x2
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/x2-gateway
+  org: rhdh-deploy
+  name: x2-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: x2/poi-gateway-app
+  tag: latest
